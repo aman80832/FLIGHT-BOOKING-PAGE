@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight Booking</title>
+
+<link rel="stylesheet" href="style1.css">
+
+<!-- FONT AWESOME -->
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Search and Book Your Flight ✈</h1>
+</header>
+
+<main>
+
+    <!-- SEARCH BAR -->
+    <div class="search-box">
+        <input type="text" placeholder="Search flights, cities">
+        <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+    </div>
+
+    <!-- FORM -->
+    <div class="form-card">
+
+        <h2>Passenger Details</h2>
+
+        <form id="bookingForm">
+
+            <input type="text" id="name" placeholder="Enter passenger name">
+
+            <div class="radio-group">
+                <label><input type="radio" name="gender"> MALE</label>
+                <label><input type="radio" name="gender"> FEMALE</label>
+                <label><input type="radio" name="gender"> OTHERS</label>
+            </div>
+
+            <input type="number" id="age" placeholder="Enter your age" min="1" max="100">
+
+            <input type="text" id="uid" placeholder="Enter your unique ID">
+
+            <input type="date" id="date">
+
+            <div class="btn-group">
+                <button type="button" onclick="bookFlight()">Next</button>
+                <a href="index.html" class="home-btn">Home</a>
+            </div>
+
+        </form>
+
+        <div id="message"></div>
+
+    </div>
+
+</main>
+
+<!-- ✅ JAVASCRIPT LINK -->
+<script src="script1.js"></script>
+
+</body>
+</html>

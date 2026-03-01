@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    min-height:100vh;
+    background: url("bbb0159783db94224417fa46898e78dc.jpg") no-repeat center center/cover;
+    color:white;
+    position:relative;
+}
+
+/* DARK OVERLAY */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.55);
+    z-index:-1;
+}
+
+/* ===== HEADER ===== */
+header{
+    text-align:center;
+    padding-top:30px;
+}
+
+/* TITLE */
+.title{
+    position: relative;
+    display: inline-block;
+}
+
+.title::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 0%;
+    height: 3px;
+    background:red;
+    transition: 0.5s ease;
+}
+
+.title:hover::after{
+    width: 100%;
+}
+
+header h1{
+    font-size:40px;
+    letter-spacing:2px;
+}
+
+/* ===== NAVBAR ===== */
+.nav{
+    margin-top:8px;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+}
+
+.nav a{
+    text-decoration: none;
+    color:white;
+    font-size:18px;
+    position:relative;
+    transition:0.3s;
+}
+
+/* navbar underline animation */
+.nav a::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-5px;
+    width:0%;
+    height:2px;
+    background:cyan;
+    transition:0.4s;
+}
+
+.nav a:hover::after{
+    width:100%;
+}
+
+.nav a:hover{
+    color:cyan;
+}
+
+/* ===== MAIN ===== */
+main{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:50px;
+}
+
+/* ===== GLASS LOGIN CARD ===== */
+.booking{
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(18px);
+    padding:30px;
+    border-radius:18px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 0 25px rgba(0,0,0,0.5);
+}
+
+/* INPUT FIELDS */
+.booking input{
+    width:100%;
+    padding:12px;
+    margin:12px 0;
+    border:none;
+    border-radius:10px;
+    outline:none;
+}
+
+/* BUTTON */
+.booking input[type="button"]{
+    background:#00a8ff;
+    color:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.booking input[type="button"]:hover{
+    background:#0097e6;
+    transform:scale(1.05);
+}
+
+/* MESSAGE */
+.message{
+    margin-top:25px;
+    text-align:center;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background: rgba(0,0,0,0.6);
+    padding:12px;
+}

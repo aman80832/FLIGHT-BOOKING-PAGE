@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment</title>
+
+<link rel="stylesheet" href="style3.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Complete Your Payment 💳</h1>
+</header>
+
+<main class="payment-container">
+
+    <!-- FARE SUMMARY -->
+    <div class="fare-box">
+        <h2>Fare Summary</h2>
+        <p>Base Fare <span>₹4500</span></p>
+        <p>Taxes <span>₹500</span></p>
+        <hr>
+        <h3>Total <span>₹5000</span></h3>
+    </div>
+
+    <!-- PAYMENT FORM -->
+    <div class="payment-box">
+
+        <h2>Select Payment Method</h2>
+
+        <!-- PAYMENT OPTIONS -->
+        <div class="payment-methods">
+
+            <label>
+                <input type="radio" name="pay"> Credit / Debit Card
+            </label>
+
+            <label>
+                <input type="radio" name="pay"> UPI
+            </label>
+
+            <label>
+                <input type="radio" name="pay"> Net Banking
+            </label>
+
+        </div>
+
+        <!-- CARD DETAILS -->
+        <form>
+
+            <input type="text" placeholder="Cardholder Name">
+
+            <input type="text" placeholder="Card Number">
+
+            <div class="card-details">
+                <input type="text" placeholder="MM/YY">
+                <input type="text" placeholder="CVV">
+            </div>
+
+            <!-- UPI -->
+            <input type="text" placeholder="Enter UPI ID (example@upi)">
+
+            <!-- NET BANKING -->
+            <select>
+                <option>Select Bank</option>
+                <option>SBI</option>
+                <option>HDFC</option>
+                <option>ICICI</option>
+                <option>Axis</option>
+            </select>
+
+            <button type="submit" class="pay-btn">
+                Pay ₹5000
+            </button>
+
+        </form>
+
+        <p class="secure">
+            <i class="fa-solid fa-lock"></i>
+            100% Secure Payment
+        </p>
+
+    </div>
+
+</main>
+<script src="script2.js"></script>
+
+</body>
+</html>
